@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema</title>
+</head>
+<body>
+    <h1>Login</h1>
+
+    <input id="email" placeholder="Email"><br><br>
+    <input id="senha" type="password" placeholder="Senha"><br><br>
+    <button onclick="login()">Entrar</button>
+
+    <script>
+        async function login() {
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+
+            const resposta = await fetch("http://localhost:8080/api/login", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email, senha })
+            });
+
+            const dados = await resposta.json();
+            alert("Token: " + dados.token);
+        }
+    </script>
+</body>
+</html>

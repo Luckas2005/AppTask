@@ -1,0 +1,14 @@
+[
+  {
+    "nome": "Computador Gamer",
+    "preco": 5500.00,
+    "categoria": "Hardware",
+    "estoque": 10
+  },
+  {
+    "nome": "Licença Windows 11",
+    "preco": 799.00,
+    "categoria": "Software",
+    "estoque": 50
+  }
+]

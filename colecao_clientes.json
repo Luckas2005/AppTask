@@ -1,0 +1,16 @@
+[
+  {
+    "nome": "Maria Oliveira",
+    "cpf": "12345678900",
+    "email": "maria@gmail.com",
+    "tipo": "PREMIUM",
+    "dataCriacao": "2025-01-01T10:00:00Z"
+  },
+  {
+    "nome": "Pedro Santos",
+    "cpf": "98765432100",
+    "email": "pedro@gmail.com",
+    "tipo": "NORMAL",
+    "dataCriacao": "2025-01-02T11:00:00Z"
+  }
+]
